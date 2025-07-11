@@ -16,19 +16,19 @@ class Person {
 class Student extends Person {
 	constructor(name, age){
 		super(name, age);
-		study(){
-			return this.name +`is studying`;
-		}
 	}
+	study(){
+			console.log(`${this.name} is studying`);
+		}
 }
 
 class Teacher extends Person {
 	constructor(name, age){
 		super(name, age);
-		teach(){
-			return this.name +`is teaching`;
-		}
 	}
+	teach(){
+			console.log(`${this.name} is teaching`);
+		}
 }
 const person = new Person("John", 25);
 console.log(person.name);
